@@ -1,0 +1,55 @@
+<apex:page standardController="Opportunity" showHeader="false" standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0">
+  <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="x-ua-compatible" content="ie=edge" />
+      <title>SLDS CloseOpportunity Page in Salesforce Mobile</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <!-- Import the Design System style sheet -->
+      <apex:slds />
+    </head>
+    <apex:remoteObjects >
+      <apex:remoteObjectModel name="Opportunity" fields="Id,Name"/>
+    </apex:remoteObjects>
+    <body>
+      <!-- REQUIRED SLDS WRAPPER -->
+      <div class="slds-scope">
+        <!-- PRIMARY CONTENT WRAPPER -->
+        <div class="myapp">
+          <!-- CREATE BUTTONS -->
+            <div class="slds-grid slds-wrap">
+              <div class="slds-col slds-size--1-of-1">
+                <div class="slds-box slds-box_x-small slds-text-align_center slds-m-around--x-small slds-theme_default" 
+                            onclick="closeOpportunity('Closed Won')">Won</div> 
+              </div>
+              <div class="slds-col slds-size--1-of-1">
+                <div class="slds-box slds-box_x-small slds-text-align_center slds-m-around--x-small slds-theme_default" 
+                            onclick="closeOpportunity('Closed Lost')">Lost</div>
+              </div>
+            </div>
+          <!-- / CREATE BUTTONS  -->
+        </div>
+        <!-- / PRIMARY CONTENT WRAPPER -->
+      </div>
+      <!-- / REQUIRED SLDS WRAPPER -->
+      <!-- IMPORT PUBLISHER SDK -->
+      <script src='/canvas/sdk/js/publisher.js'></script>  
+      <!-- / IMPORT PUBLISHER SDK -->
+      <!-- JAVASCRIPT -->
+        <script>
+            var opportunityId = "{!Opportunity.Id}";
+            function closeOpportunity(stageName) {
+                var opportunity = new SObjectModel.Opportunity();
+                opportunity.update([opportunityId], {StageName: stageName}, function(error, records) {
+                    if (error) {
+                        alert(error.message);
+                    } else {
+                        Sfdc.canvas.publisher.publish({ name: "publisher.close", payload: {refresh:"true"}});
+                    }
+                });
+            }
+        </script>
+      <!-- / JAVASCRIPT -->
+    </body>
+  </html>
+</apex:page>

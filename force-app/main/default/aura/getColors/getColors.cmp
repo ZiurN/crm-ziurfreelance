@@ -1,0 +1,41 @@
+<aura:component controller="GetColorsController" implements="flexipage:availableForRecordHome,force:hasRecordId">
+	<aura:attribute name="colorInfo" type="Object" default="{}" />
+	<aura:attribute name="haveColors" type="Boolean" default="false" />
+	<aura:attribute name="isLoading" type="Boolean" default="true" />
+	<aura:handler name="init" value="{!this}" action="{!c.init}"/>
+	<lightning:card title="Colors">
+		<lightning:layout multipleRows="true">
+			<lightning:layoutItem padding="around-small" size="6" class="btn-container">
+				<div style="width: 100%">
+					<lightning:button
+						label="Get Color!"
+						title="Get Color!"
+						onclick="{!c.handleClick}"/>
+				</div>
+			</lightning:layoutItem>
+			<lightning:layoutItem padding="around-small" size="6">
+				<aura:if isTrue="{!!v.isLoading}" >
+					<aura:if isTrue="{!v.haveColors}" >
+						<lightning:layout multipleRows="true">
+							<lightning:layoutItem padding="around-small" size="6">
+								<div style="{! 'padding: 1rem; margin: auto; background-color:' + v.colorInfo.colorCode + '; min-width: 50px; max-width: 300px; min-height: 50px; max-height: 300px;'}" >
+								</div>
+							</lightning:layoutItem>
+							<lightning:layoutItem padding="around-small" size="6">
+								<p>{!v.colorInfo.color}</p>
+							</lightning:layoutItem>
+						</lightning:layout>
+						<aura:set attribute="else">
+							<p> No color To Display. </p>
+						</aura:set>
+					</aura:if>
+					<aura:set attribute="else">
+						<div style="position: relative;">
+							<lightning:spinner alternativeText="Loading" size="medium" />
+						</div>
+					</aura:set>
+				</aura:if>
+			</lightning:layoutItem>
+		</lightning:layout>
+	</lightning:card>
+</aura:component>

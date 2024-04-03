@@ -1,0 +1,53 @@
+<apex:page showHeader="false" standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0">
+  <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="x-ua-compatible" content="ie=edge" />
+      <title>SLDS QuickAccount Page in Salesforce Mobile</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <!-- Import the Design System style sheet -->
+      <apex:slds />
+    </head>
+    <apex:remoteObjects >
+      <apex:remoteObjectModel name="Account" fields="Id,Name"/>
+    </apex:remoteObjects>
+    <body>
+      <!-- REQUIRED SLDS WRAPPER -->
+      <div class="slds-scope">
+        <!-- PRIMARY CONTENT WRAPPER -->
+        <div class="myapp">
+          <!-- INPUT FIELD -->
+          <div class="slds-form-element">
+            <label class="slds-form-element__label slds-text-heading_medium 
+                          slds-p-bottom_medium" for="text-input-id-1">Account Name:</label>
+            <div class="slds-form-element__control">
+              <input type="text" id="accountName" class="slds-input"> </input>
+            </div>
+          </div>
+          <!-- / INPUT FIELD -->
+          <!-- BUTTON -->
+          <button class="slds-button_neutral slds-size_1-of-1 
+                         slds-m-top_x-small slds-p-bottom_x-small slds-p-top_x-small" 
+                         onclick="createAccount()">Create Account</button>
+          <!-- / BUTTON -->
+        </div>
+        <!-- / PRIMARY CONTENT WRAPPER -->
+      </div>
+      <!-- / REQUIRED SLDS WRAPPER -->
+      <!-- JAVASCRIPT -->
+        <script>function createAccount() {
+            var accountName = document.getElementById("accountName").value;
+            var account = new SObjectModel.Account();
+            account.create({Name: accountName}, function(error, records) {
+                if (error) {
+                    alert(error.message);
+                } else {
+                    sforce.one.navigateToSObject(records[0]);
+                }
+            });
+        }
+        </script>
+      <!-- / JAVASCRIPT -->
+    </body>
+  </html>
+</apex:page>
