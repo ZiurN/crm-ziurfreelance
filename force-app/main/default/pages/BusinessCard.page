@@ -1,0 +1,12 @@
+<apex:page >
+    <apex:pageBlock >
+        <h2>Info</h2>
+       <ul>
+           <li>First Name: {!$User.FirstName}</li>
+           <li>Last Name: {!$User.LastName}</li>
+           <li>Email: {!$User.Email}</li>
+           <li>Phone: {!$User.Phone}</li>
+           <li>Title: {!$User.Title}</li>
+       </ul>
+    </apex:pageBlock>
+</apex:page>

@@ -1,0 +1,14 @@
+<apex:page standardController="Opportunity" docType="html-5.0" >
+    <apex:pageBlock rendered="{!if(Opportunity.stagename=='Prospecting', true, false)}">
+        <p>Prospecting</p>
+    </apex:pageBlock>
+    <apex:pageBlock rendered="{!if(Opportunity.stagename=='Needs Analysis', true, false)}">
+        <p>Needs Analysis</p>
+    </apex:pageBlock>
+    <apex:pageBlock rendered="{!if(Opportunity.stagename=='Proposal/Price Quote', true, false)}">
+        <p>Proposal/Price Quote</p>
+    </apex:pageBlock>
+    <apex:pageBlock rendered="{!if(Opportunity.stagename=='Negotiation/Review', true, false)}">
+        <p>Negotiation/Review</p>
+    </apex:pageBlock>
+</apex:page>

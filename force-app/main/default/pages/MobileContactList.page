@@ -1,0 +1,13 @@
+<apex:page showHeader="true" sidebar="true" standardController="Contact" recordSetVar="contacts">
+    <head>
+        <apex:slds />
+    </head>
+    <apex:repeat value="{!contacts}" var="c">
+        <dl class="slds-list_horizontal slds-wrap">
+            <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Contact Name">Name:</dt>
+            <dd class="slds-item_detail slds-truncate" title="Contact Name Data">{!c.Name}</dd>
+            <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Contact Phone">Phone:</dt>
+            <dd class="slds-item_detail slds-truncate" title="Contact Phone Data">{!c.Phone}</dd>
+        </dl>
+    </apex:repeat>
+</apex:page>
