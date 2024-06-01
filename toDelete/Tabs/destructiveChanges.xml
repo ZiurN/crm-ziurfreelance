@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+        <members>Basics</members>
+        <members>Error_Handling</members>
+        <members>Event_Comms</members>
+        <members>House__c</members>
+        <members>Interoperability</members>
+        <members>Latest_Accounts</members>
+        <members>Layout</members>
+        <members>Mixed_Records</members>
+        <members>Record_Lists</members>
+        <members>Session__c</members>
+        <members>Single_Records</members>
+        <members>Speaker__c</members>
+        <members>Waypoint__c</members>
+        <members>Words</members>
+        <members>Working_with_Data</members>
+		<name>CustomTab</name>
+	</types>
+</Package>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+<members>Account-Account Layout</members>
+		<members>Asset-Asset Layout</members>
+		<members>AssetAction-Formato Acción de activo</members>
+		<members>AssetActionSource-Formato Origen de acción de activo</members>
+		<members>AssetRelationship-Asset Relationship Layout</members>
+		<members>AssetStatePeriod-Formato Periodo de estado de activo</members>
+		<members>AssociatedLocation-Formato Ubicación asociada</members>
+		<members>AuthorizationForm-Authorization Form Layout</members>
+		<members>AuthorizationFormConsent-Authorization Form Consent Layout</members>
+		<members>BoatReview__c-BoatReview Layout</members>
+		<members>BoatType__c-Boat Type Layout</members>
+		<members>Boat__c-Boat Layout</members>
+		<members>BusinessBrand-Formato Marca comercial</members>
+		<members>Campaign-Campaign Layout</members>
+		<members>CampaignMember-Campaign Member Page Layout</members>
+		<members>CardPaymentMethod-Formato Método de pago con tarjeta</members>
+		<members>Case-Case %28Marketing%29 Layout</members>
+		<members>Case-Case %28Sales%29 Layout</members>
+		<members>Case-Case %28Support%29 Layout</members>
+		<members>Case-Case Layout</members>
+		<members>CaseClose-Close Case Layout</members>
+		<members>Case_Study__c-Case Study Layout</members>
+		<members>CollaborationGroup-Group Layout</members>
+		<members>Color_By_Account__c-Color By Account Layout</members>
+		<members>CommunityMemberLayout-Community Member Layout</members>
+		<members>ConsumptionRate-Consumption Rate Layout</members>
+		<members>ConsumptionSchedule-Consumption Schedule Layout</members>
+		<members>Contact-Contact %28Marketing%29 Layout</members>
+		<members>Contact-Contact %28Sales%29 Layout</members>
+		<members>Contact-Contact %28Support%29 Layout</members>
+		<members>Contact-Contact Layout</members>
+		<members>ContactPointAddress-Formato Dirección de punto de contacto</members>
+		<members>ContactPointEmail-Formato Correo electrónico de punto de contacto</members>
+		<members>ContactPointPhone-Formato Teléfono de punto de contacto</members>
+		<members>ContentAsset-Asset File Layout</members>
+		<members>ContentVersion-Content Version Layout</members>
+		<members>Contract-Contract Layout</members>
+		<members>Country_Code__mdt-Country Code Layout</members>
+		<members>CreditMemo-Formato Memorándum de crédito</members>
+		<members>CreditMemoLine-Formato Partida de memorándum de crédito</members>
+		<members>Customer-Formato Cliente</members>
+		<members>DandBCompany-D%26B Company Layout</members>
+		<members>DigitalWallet-Formato Cartera digital</members>
+		<members>DuplicateRecordSet-Duplicate Record Set Layout</members>
+		<members>EmailMessage-Email Message Layout</members>
+		<members>EnhancedLetterhead-Enhanced Letterhead Layout</members>
+		<members>Event-Event Layout</members>
+		<members>FeedItem-Feed Item Layout</members>
+		<members>FinanceBalanceSnapshot-Formato Instantánea de saldo financiero</members>
+		<members>FinanceTransaction-Formato Transacción financiera</members>
+		<members>Global-Global Layout</members>
+		<members>House__c-House Layout</members>
+		<members>Idea-Idea Layout</members>
+		<members>Individual-Formato Persona</members>
+		<members>Invoice-Formato Factura</members>
+		<members>InvoiceLine-Formato Partida de factura</members>
+		<members>Knowledge__kav-Knowledge Layout</members>
+		<members>Lead-Custom Layout</members>
+		<members>Lead-Lead %28Marketing%29 Layout</members>
+		<members>Lead-Lead %28Sales%29 Layout</members>
+		<members>Lead-Lead %28Support%29 Layout</members>
+		<members>Lead-Lead Layout</members>
+		<members>LegalEntity-Formato Entidad legal</members>
+		<members>Location-Formato Ubicación</members>
+		<members>Macro-Macro Layout</members>
+		<members>Opportunity-Opportunity %28Marketing%29 Layout</members>
+		<members>Opportunity-Opportunity %28Sales%29 Layout</members>
+		<members>Opportunity-Opportunity %28Support%29 Layout</members>
+		<members>Opportunity-Opportunity Layout</members>
+		<members>Opportunity-Utility Opportunity Page</members>
+		<members>OpportunityLineItem-Opportunity Product Layout</members>
+		<members>Order-Order Layout</members>
+		<members>OrderItem-Order Product Layout</members>
+		<members>Payment-Formato Pago</members>
+		<members>PaymentAuthorization-Formato Autorización de pago</members>
+		<members>PaymentGateway-Formato Pasarela de pago</members>
+		<members>PaymentGatewayLog-Formato Registro de pasarela de pago</members>
+		<members>PaymentGroup-Formato Grupo de pago</members>
+		<members>PaymentLineInvoice-Formato Factura de partida de pago</members>
+		<members>Phone_Plan__x-phone_plans Layout</members>
+		<members>Phone__x-phones Layout</members>
+		<members>Pricebook2-Price Book Layout</members>
+		<members>PricebookEntry-Price Book Entry Layout</members>
+		<members>ProcessException-Formato Excepción de proceso</members>
+		<members>Product2-Product Layout</members>
+		<members>ProductConsumptionSchedule-Product Consumption Schedule Layout</members>
+		<members>QuickText-Quick Text Layout</members>
+		<members>Quote-Quote Layout</members>
+		<members>QuoteLineItem-Quote Line Item Layout</members>
+		<members>Refund-Formato Reembolso</members>
+		<members>RefundLinePayment-Formato Pago de partida de reembolso</members>
+		<members>Scorecard-Scorecard Layout</members>
+		<members>ScorecardAssociation-Scorecard Association Layout</members>
+		<members>ScorecardMetric-Scorecard Metric Layout</members>
+		<members>Seller-Formato Vendedor</members>
+		<members>Session_Speaker__c-Session Speaker Layout</members>
+		<members>Session__c-Sassion Layout</members>
+		<members>SocialPersona-Social Persona Layout</members>
+		<members>Solution-Solution Layout</members>
+		<members>Speaker__c-Speaker Layout</members>
+		<members>Task-Task Layout</members>
+		<members>Test_User__c-Test User Layout</members>
+		<members>User-User Layout</members>
+		<members>UserAlt-Formato Perfil de usuario</members>
+		<members>UserProvAccount-User Provisioning Account Layout</members>
+		<members>UserProvisioningLog-User Provisioning Log Layout</members>
+		<members>UserProvisioningRequest-User Provisioning Request Layout</members>
+		<members>Waypoint__c-Waypoint Layout</members>
+		<name>Layout</name>
+	</types>
+</Package>

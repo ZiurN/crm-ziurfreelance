@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+<members>QuickAccount</members>
+<members>LatestAccounts</members>
+<members>BusinessCard</members>
+<members>SimilarBoats</members>
+<members>basicListGetListUi</members>
+<members>editRecord</members>
+<members>editableList</members>
+<members>interoperability</members>
+<members>listRecordLinks</members>
+<members>listWithParentRecordData</members>
+<members>pageBlocks</members>
+<members>panelBar</members>
+<members>panelGrid</members>
+<members>tabs</members>
+<members>toolbar</members>
+<members>viewRecord</members>
+<members>viewRecordWithParentRecordData</members>
+<members>visualforceAction</members>
+<members>afterRenderHook</members>
+<members>beforeRenderHook</members>
+<members>binding</members>
+<members>createMixedRecords</members>
+<members>createRecordWithPrepopulatedValues</members>
+<members>pageMessages</members>
+<members>pageMessagesDataRetrieval</members>
+<members>pageMessagesForm</members>
+<members>paginatedList</members>
+<members>viewRelatedRecords</members>
+<members>HelloMobile</members>
+<members>ShowAssistantInfo</members>
+<members>MobileContactList</members>
+<members>CloseOpportunity</members>
+<members>StockQuote</members>
+<members>OpportunityStageTips</members>
+<members>MyFirstPage</members>
+		<name>ApexPage</name>
+	</types>
+</Package>
